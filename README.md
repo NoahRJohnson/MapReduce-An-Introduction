@@ -1,2 +1,2 @@
 # MapReduce-An-Introduction
-First homework for my Distributed Computing course.
+Use python's MrJob library to write several simple test programs, using MapReduce to count word frequencies.
