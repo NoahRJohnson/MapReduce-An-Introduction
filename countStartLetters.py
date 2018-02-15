@@ -6,7 +6,7 @@ from mrjob.job import MRJob
 Create a MapReduce job which counts the number of words that begin with each letter.
 That is, how many words start with 'a'? How many words start with 'b'? ...
 '''
-class MR3Count(MRJob):
+class MRStartLetterCount(MRJob):
 
     def mapper(self, _, line):
         words = line.split()
@@ -20,4 +20,4 @@ class MR3Count(MRJob):
 
 
 if __name__ == '__main__':
-    MR3Count.run()
+    MRStartLetterCount.run()

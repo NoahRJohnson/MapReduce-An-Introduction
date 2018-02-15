@@ -7,7 +7,7 @@ Create a MapReduce job which, for each possible word length, computes the averag
 number of vowels in the word. That is, words with 4 letters typically have how many
 vowels? Words with 5 letters typically have how many vowels?
 '''
-class MR3Count(MRJob):
+class MRVowelCount(MRJob):
 
     def mapper(self, _, line):
         words = line.split()
@@ -27,4 +27,4 @@ class MR3Count(MRJob):
 
 
 if __name__ == '__main__':
-    MR3Count.run()
+    MRVowelCount.run()
